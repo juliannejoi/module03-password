@@ -22,7 +22,7 @@ function generatePassword() {
     var checkLowercase = confirm("Would you like to include lowercase characters?")
     var checkUppercase = confirm("Would you like to use Uppercase characters?")
     var checkNumeric = confirm("Would you like to use numeric characters?")
-    var checkSpecialCharacters = confirm("Would you like to use special characters?")
+    var checkSpecialCharacters = confirm("Would you like to use special characters !@#$%^&()*?")
     if (checkLowercase === true) {
       var position = Math.floor(Math.random() * 26)
       finalPassword = finalPassword + lowercase[position]
@@ -46,7 +46,7 @@ function generatePassword() {
   else {
     alert("password must be within 8 to 128 characters")
   }
-return finalPassword
+  return finalPassword
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
