@@ -25,21 +25,21 @@ function generatePassword() {
     var checkSpecialCharacters = confirm("Would you like to use special characters !@#$%^&()*?")
     if (checkLowercase === true) {
       var position = Math.floor(Math.random() * 26)
-      finalPassword = finalPassword + lowercase[position]
+      finalPassword += finalPassword + lowercase[position]
     }
     if (checkUppercase === true) {
       var position = Math.floor(Math.random() * 26)
-      finalPassword = finalPassword + uppercase[position]
+      finalPassword += finalPassword + uppercase[position]
 
     }
     if (checkNumeric === true) {
       var position = Math.floor(Math.random() * 10)
-      finalPassword = finalPassword + numeric[position]
+      finalPassword += finalPassword + numeric[position]
 
     }
     if (checkSpecialCharacters === true) {
       var position = Math.floor(Math.random() * 10)
-      finalPassword = finalPassword + specialCharacters[position]
+      finalPassword += finalPassword + specialCharacters[position]
 
     }
   }
